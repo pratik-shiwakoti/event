@@ -1,0 +1,509 @@
+/* Styles for the Upcoming Event Section */
+.upcoming-event-section {
+    background: linear-gradient(to right, rgba(255, 200, 0, 0.7), rgba(0, 150, 255, 0.7)), 
+                url('stick bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 8% 6%; /* Responsive padding using % */
+    color: white;
+    text-align: center;
+    border-radius: 0px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: auto;
+}
+
+.upcoming-event-section::after {
+    content: "Step into nature's embrace with Hikemandu";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    border-radius: 0px;
+    z-index: 0;
+}
+
+.event-content {
+    position: relative;
+    z-index: 1;
+}
+
+.event-title {
+    font-size: 3rem; /* Responsive font size */
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 2%; /* Responsive margin */
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+
+.event-description {
+    font-size: 1.5rem; /* Responsive font size */
+    margin-bottom: 3%; /* Responsive margin */
+    font-weight: 300;
+    font-style: italic;
+}
+
+.event-button {
+    background-color: #ff8c00; /* Bright button color */
+    color: white;
+    padding: 1.5rem 3rem; /* Relative padding */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.event-button:hover {
+    background-color: #ff6600; /* Darker shade on hover */
+}
+
+.fun {
+    margin-top: auto;
+    margin-bottom: 1%; /* Relative margin */
+    letter-spacing: 2px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.event-info {
+    font-size: 1.5rem; /* Responsive font size */
+    font-weight: bold;
+    text-transform: inherit;
+    background: linear-gradient(45deg, #ff5733, #ffbd33, #33ff57);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.register-button {
+    background-color: rgb(42, 205, 214);
+    color: white;
+    padding: 1.5rem 3rem; /* Relative padding */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    height: 4rem;
+}
+
+.register-button:hover {
+    background-color: #ff6600;
+}
+
+.submit-button {
+    background-color: #aef869; /* Bright button color */
+    color: black;
+    padding: 1rem 2rem; /* Relative padding */
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    height: fit-content;
+}
+
+.clear-button {
+    background-color: #f5a88a; /* Bright button color */
+    color: black;
+    padding: 1rem 2rem; /* Relative padding */
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    height: fit-content;
+}
+
+/* Popup Styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    padding-top: 5%; /* Adjusted padding using % */
+    backdrop-filter: blur(5px);
+}
+
+.learn-more-bg {
+    background: linear-gradient(135deg, #f4a32b, #ef5d30);
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+.register-bg {
+    background: linear-gradient(135deg, #838039, #e19f43);
+    color: white;
+}
+
+.popup-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70vh; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: none;
+    margin: auto;
+    padding: 2rem; /* Responsive padding */
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+.popup-content::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
+.close {
+    color: red;
+    font-size: 2rem; /* Responsive font size */
+    font-weight: bold;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form Styles */
+form input {
+    width: 90%;
+    max-width: 600px;
+    padding: 0.6rem;
+    margin: 5px auto;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: #d9f9f7af;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+form button:hover {
+    background:linear-gradient(45deg, #f28066, #efc15c, #6af784);
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Form Validation Styles */
+input:invalid,
+textarea:invalid {
+    border-color: rgb(244, 98, 98);
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+    border-color: #f44336;
+    outline: none;
+}
+
+/* Countdown Section Styles */
+.countdown-text {
+    font-size: 1.8rem; /* Responsive font size */
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #ff0000e1, #3dcd24, #ffeb00); /* Gradient background */
+    padding: 1rem 2rem; /* Relative padding */
+    border-radius: 15px; /* Smooth rounded corners */
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto; /* Center the countdown text */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for better emphasis */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); /* Stronger text shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.countdown-text:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 650px) {
+    .event-title {
+        font-size: 2rem; /* Smaller font on mobile */
+    }
+
+    .event-description {
+        font-size: 1.1rem;
+    }
+
+    .event-button {
+        font-size: 0.9rem; /* Smaller font size */
+        padding: 0.8rem 1.5rem; /* Adjust padding */
+    }
+    #countdown {
+        font-size: 1.5rem; /* Slightly smaller font on mobile */
+        padding: 1rem 1.5rem; /* Adjusted padding for mobile responsiveness */
+    }
+
+    .countdown-text {
+        font-size: 1.3rem; /* Slightly smaller font on mobile */
+        padding: 0.8rem 1.5rem; /* Adjusted padding for mobile */
+    }
+}
+
+/* Footer Styling */
+footer {
+    height: auto;
+    background: linear-gradient(15deg, rgba(30, 46, 46, 0.6), rgba(212, 209, 203, 0.6), rgba(137, 233, 206, 0.6)); /* Soft green gradient */
+    padding: 2.5em 5vw; /* Relative padding with em and vw for responsiveness */
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: auto;
+}
+
+footer p {
+    margin: 0.5em 0; /* Adjusted margin using em for relative spacing */
+    font-size: 1rem; /* Base font size, can be adjusted for better responsiveness */
+    word-wrap: break-word;  /* Break long words */
+    overflow-wrap: break-word; /* Ensures compatibility */
+}
+
+footer a {
+    color: rgb(221, 175, 76);
+    text-decoration:line-through;
+    margin: 2 1em; /* Margin using em for responsive spacing */
+    font-size: 3rem; /* Base font size */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Marquee Effect */
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite alternate;
+    font-size: 1.2rem; /* Slightly larger font for marquee text */
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(100%); }
+    50% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Social Media Icon Styles */
+footer .social-icons i {
+    font-size: 2rem; /* Responsive size for social media icons */
+    margin: 0 2vw; /* Margin with vw for responsiveness */
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons i:hover {
+    color: #1DA1F2; /* Twitter color */
+}
+
+/* Specific colors for each social media icon */
+footer .social-icons a:nth-child(1) i {
+    color: rgba(22, 22, 203, 0.841); /* Facebook blue */
+}
+
+footer .social-icons a:nth-child(2) i {
+    color: #E4405F; /* Instagram pink */
+}
+
+footer .social-icons a:nth-child(3) i {
+    color: #1DA1F2; /* Twitter blue */
+}
+
+/* Hover effects for each icon */
+footer .social-icons a:nth-child(1) i:hover {
+    color: #3b5998; /* Facebook stays blue on hover */
+}
+
+footer .social-icons a:nth-child(2) i:hover {
+    color: #E4405F; /* Instagram stays pink on hover */
+}
+
+footer .social-icons a:nth-child(3) i:hover {
+    color: #1DA1F2; /* Twitter stays blue on hover */
+}
+
+/* Media Query for smaller screens (Mobile Responsiveness) */
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 1.5em 5%; /* Adjust padding for smaller screens */
+    }
+
+    footer p, footer a {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+}
+
+    /* Add some basic styling for the feedback form */
+    #feedback-section {
+        width: auto;
+        margin: auto;
+        padding: 5% 10%;  /* Relative padding */
+        border: 1px solid #ccc;
+        border-radius: 10px; /* Optional border-radius for more rounded corners */
+        background: linear-gradient(to right, rgba(255, 200, 0, 0.7), rgba(0, 150, 255, 0.7)); /* Light gradient */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: auto;
+        resize: vertical;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Align content at the top */
+        position: relative; /* Ensure positioning context for the pseudo-element */
+    }    
+
+    #feedback-response {
+        color: green;
+    }
+
+    .feedback-submit-button {
+        padding: 12px 20px;  /* Fixed padding for the button */
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .feedback-submit-button:hover {
+        background-color: #45a049;
+    }
+
+    /* Style for the feedback section header */
+    #feedback-section h2 {
+        margin-top: 0;
+       
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        font-size: 2em;  /* Responsive font size */
+    }
+
+    /* Style the form elements */
+    label, textarea {
+        font-size: 1.2em; /* Relative font size */
+        font-family: 'Arial', sans-serif;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 2%;  /* Relative padding */
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1em; /* Responsive font size */
+        height: 15px;  /* Adjust this value to set a specific height */
+    resize: vertical;  /* Allow users to resize vertically if they wish */
+    }
+
+    
+/* Styles for Gender Selection */
+#gender {
+    width: 30%;
+    max-width: 30%;
+    padding: 2% 5%; /* Relative padding */
+    margin: 5px auto;
+    border-radius: 50px;
+    border: 1.5px solid rgb(239, 12, 12);
+    background: #d9f9f7af;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for Medical Information Section */
+#medicalInfo {
+    background: #d9f9f7af;
+    color: black;
+    padding: 2% 5%; /* Relative padding */
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    border-radius: 5px;
+    border: 1.6px solid rgb(239, 12, 12);
+    margin: 10px 0;
+    width: 80%;
+    max-width: 85%;
+    display: block;
+    resize: vertical;
+}
+
+/* Styles for Terms and Conditions Checkbox */
+.terms {
+    display: flex;
+    align-items: flex-start; /* Align to the start of the flex container */
+    margin: 2% 0; /* Relative margin */
+    padding: 2% 5%; /* Relative padding */
+    width: 60%;
+    max-width: 80%;
+    background: #d9f9f7af;
+    border-radius: 15px;
+}
+
+/* Styles for Checkbox Input */
+input[type="checkbox"] {
+    width: 5%; /* Relative width */
+    height: 10%;
+    margin: 2% 1%; /* Relative margin */
+    transition: transform 0.3s ease;
+}
+
+/* Styles for Terms and Conditions Label */
+.terms label {
+    color: rgb(246, 27, 27);
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    margin-left: 2%; /* Reduced margin-left for better alignment */
+}
+
+/* Adjust the layout on smaller screens */
+@media (max-width: 650px) {
+    #gender,
+    #medicalInfo,
+    .terms {
+        width: 100%; /* Ensure full width on mobile */
+    }
+
+    .terms {
+        flex-direction: column; /* Stack checkbox and label vertically on mobile */
+    }
+}

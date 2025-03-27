@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Hikemandu</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    
+    <header>
+        <h1>Hikemandu- Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html"><button class="nav-btn">Home</button></a></li>
+                <li><a href="trails.html"><button class="nav-btn">Trail</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-section">
+            <h2>Photo Gallery</h2>
+
+            <div class="gallery-group">
+                <p>Mar 22, 2025 | Ranikot, Bhaktapur</p>
+                <div class="gallery">
+                    <img src="Hiking Image 1.jpg" alt="Hiking Image 1" onclick="openModal(this)">
+                    <img src="Hiking Image 2.jpg" alt="Hiking Image 2" onclick="openModal(this)">
+                    <img src="Hiking Image 3.jpg" alt="Hiking Image 3" onclick="openModal(this)">
+                    <img src="Hiking Image 4.jpg" alt="Hiking Image 4" onclick="openModal(this)">
+                </div>
+            </div>
+            <br>
+            <div class="gallery-group">
+                <p>Sept 7, 2024 | Manichud Daha, Shivapuri National Park</p>
+                <div class="gallery">
+                    <img src="Hiking Image 9.jpg" alt="Hiking Image 9" onclick="openModal(this)">
+                    <img src="Hiking Image 10.jpg" alt="Hiking Image 10" onclick="openModal(this)">
+                    <img src="Hiking Image 11.jpg" alt="Hiking Image 11" onclick="openModal(this)">
+                    <img src="Hiking Image 12.jpeg" alt="Hiking Image 12" onclick="openModal(this)">
+                </div>
+            </div>
+            <br>
+            <div class="gallery-group">
+                <p>Jun 13, 2024 | Rani Jhula, Bhaktapur</p>
+                <div class="gallery">
+                    <img src="Hiking Image 5.jpg" alt="Hiking Image 5" onclick="openModal(this)">
+                    <img src="Hiking Image 6.jpg" alt="Hiking Image 6" onclick="openModal(this)">
+                    <img src="Hiking Image 7.jpg" alt="Hiking Image 7" onclick="openModal(this)">
+                    <img src="Hiking Image 8.jpeg" alt="Hiking Image 8" onclick="openModal(this)">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal (Place this just before the closing body tag) -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img id="modalImage" class="modal-content" alt="Modal Image">
+    </div>
+
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for more information or to join our next hiking adventure.</p>
+        <p> Phone No.: 9813092717,   email: pratikshiwakoti105@gmail.com</p>
+    </section>
+
+    <script src="script.js"></script>
+    </body>
+    <footer>
+        <p>&copy; 2025 Hikemandu. All rights reserved.</p>
+        <p>Follow us on:</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/Pratik.Shiwakoti.10" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com/parr_tik" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/Pratik_Cwakoti" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <p class="marquee">Designed By Pratik Shiwakoti</p>
+    </footer>
+</html>

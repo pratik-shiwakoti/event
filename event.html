@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event - Hikemandu</title>
+    <link rel="stylesheet" href="event.css"> <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+<section id="event" class="upcoming-event-section">
+    <div class="event-content">
+        <p class="event-description">
+            Join us for an unforgettable adventure! Our next event is filled with exciting activities, great company, and stunning views. Don't miss out!
+        </p>
+        <p class="fun">Limited People, Unlimited Fun</p>
+        <h2 class="event-title">Upcoming Event</h2>
+        <p id="countdown" class="countdown-text"></p>
+        <p class="event-info"> *Sanga - Aashapuri - Doleshwor - Suryabinayak Hike*</p>
+        <button class="event-button" onclick="openPopup('learnMorePopup')">Learn More</button>
+        <button class="register-button" onclick="openPopup('registerPopup')"id="registerBtn">Register Here</button>
+        
+    </div>
+</section>
+
+<!-- Learn More Popup -->
+<div id="learnMorePopup" class="popup">
+    <div class="popup-content learn-more-bg">
+        <span class="close" onclick="closePopup('learnMorePopup')">&times;</span>
+        <h2 style="color: blue; font-family: 'Times New Roman', Times, serif;">Event Details</h2>
+        <p style="color: wheat; font-size: 1.1rem; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Get ready for the most thrilling event of the year! We're hosting a special Hike with lots of exciting activities like hiking, group adventures.</p>
+        <h3 style=" color: green; font-size: 1.3rem; font-family: 'Times New Roman', Times, serif;"><strong>Hike Info</strong></h3>
+<ul style="color: black; font-size: 1.07rem;">
+        <li><strong>Route:</strong> Sanga - Aashapuri - Doleshwor - Suryabinayak</li>
+         <li><strong>Distance:</strong> 11-13km</li>
+        <li><strong>Date:</strong> 16 Chaitra 2081</li>
+        <li><strong>Duration:</strong> 5-6 hours (Approx)</li>
+        <li><strong>Difficulty:</strong> Easy-Moderate</li>
+        <li><strong>Altitude:</strong> 1300m-2000m (From sea Level)</li>
+        <li><strong>Places of Attraction:</strong> Sanga Jhulunge Bridge, KharkaBari, Bukacho Gadhi, Suryabinayak Forest </li>
+        <li><strong>Meeting Time:</strong> 9:00 AM (We hope everyone will be on time, we won't wait if you are late)</li>
+        <li><strong>Meeting Location: </strong><a href= "https://www.google.com/maps/search/?api=1&query=Kailashnath+Mahadev+Statue,+Suryabinayak-9+Saga,+Bhaktapur" target="blank" >
+         Mahadev Statue, Suryabinayak-9 Sanga, Bhaktapur</a></li>
+        <li><strong>Transportation:</strong> Public Bus (Up to Sanga)</li>
+        <li><strong>Weather:</strong> Sunny with a chance of rain</li>
+        <li><strong>Cost:</strong> NPR 200-500 per person</li>
+        <li><strong>Organizer:</strong>
+        <a href="gallery.html" target="_blank" style="color: rgb(130, 6, 246);"> Hikemandu</a></li>
+        <li><strong>Contact:</strong> 9813092717</li>
+         </ul>
+
+         <h3 style="color: green; font-size: 1.3rem; font-family: 'Times New Roman', Times, serif;"><strong>Hiking Essentials</strong></h3>
+<ul style="color: black; font-size: 1.07rem;">
+    <li><strong>Clothing:</strong> Simple & Comfortable clothing is essential to adapt to changing weather conditions.</li>
+    <li><strong>Footwear:</strong> Light, Comfortable, and Waterproof Trekking Shoes/Boots. (Choose footwear with good ankle support and traction for varied terrain)</li>
+    <li><strong>Water:</strong> Carry plenty of water for the duration of Hike. (Minimum 2 Litres)</li>
+    <li><strong>Food:</strong> Homemade Foods (Chocolates/Juice/Fruits/Dry fruits/ Dehydrated meals). Please avoid bringing junk food, carbonated drinks, and alcohol.</li>
+    <li><strong>Fitness:</strong> Ensure you are in good physical condition and a Positive Attitude before embarking on a hike.</li>
+    <li><strong>Accessories:</strong> Cap/Hat, Sunglass, Gloves,Raincoat/Umbrella, Medicine (For Emergency), trekking pole(optional)</li>
+</ul>
+<p style="color: wheat; font-style: italic; font-size: 1.1rem;"><strong>Note:</strong> "Tell someone your plans" – let someone know where you are going and when you expect to be back.</p>
+    </div>
+</div>
+
+<!-- Register Popup -->
+<div id="registerPopup" class="popup">
+    <div class="popup-content register-bg">
+        <span class="close" onclick="closePopup('registerPopup')">&times;</span>
+        <h2>Register Now</h2>
+        <p>Secure your spot by registering today! Fill out the form and be part of this amazing adventure.</p>
+        
+        <form id="registerForm" onsubmit="handleFormSubmit(event)">
+            <label>Required fields are marked with *</label>
+            
+            <input type="text" id="name" placeholder="* Enter your Full Name" required>
+            <input type="number" id="age" placeholder="* Enter your Age" required min="10" max="100">
+            <select id="gender" required>
+                <option value="" disabled selected>* Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="text" id="address" placeholder="* Enter your Current Address" required>
+            <input type="tel" id="phoneNo" placeholder="* Enter your Phone Number (10 digits)" pattern="[0-9]{10}" maxlength="10" required>
+            <input type="email" id="email" placeholder="Enter your Email Address" required>
+        
+            <h3>Medical Information</h3>
+            <textarea id="medicalInfo" placeholder="List out any medical conditions or allergies (if any)"></textarea>
+            
+            <div class="terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms" style="display: inline-block; margin-left: 5px;">I agree to the <a href="termsandconditions.html" target="_blank">Terms and Conditions</a></label>
+            </div>
+            
+            <div class="button-group">
+                <button type="button" class="clear-button" onclick="clearForm()">Clear All</button>
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="event.js"></script> <!-- Link to external JS -->
+
+<div id="feedback-section">
+    <h2>We value your feedback!</h2>
+    <form id="feedback-form">
+        <label for="feedback">Please provide your feedback about this Website:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..." required></textarea><br><br>
+        <button type="submit" class="feedback-submit-button">Submit Feedback</button>
+    </form>
+    <div id="feedback-response" style="display: none; margin-top: 10px; color: green;"></div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Hikemandu. All rights reserved.</p>
+    <p>Follow us on:</p>
+    <div class="social-icons">
+        <a href="https://facebook.com/Pratik.Shiwakoti.10" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/parr_tik" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/Pratik_Cwakoti" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+    <p class="marquee">Designed By Pratik Shiwakoti</p>
+</footer>
+</body>
+</html>
