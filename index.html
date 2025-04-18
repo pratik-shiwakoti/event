@@ -3,132 +3,562 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event - Hikemandu</title>
-    <link rel="stylesheet" href="event.css"> <!-- Linking the CSS file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <title>Upcoming Events - Hikemandu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="upcoming.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<section id="event" class="upcoming-event-section">
-    <div class="event-content">
-        <p class="event-description">
-            Join us for an unforgettable adventure! Our next event is filled with exciting activities, great company, and stunning views. Don't miss out!
-        </p>
-        <p class="fun">Limited People, Unlimited Fun</p>
-        <h2 class="event-title">Upcoming Event</h2>
-        <p id="countdown" class="countdown-text"></p>
-        <p class="event-info"> *Sanga - Aashapuri - Doleshwor - Suryabinayak Hike*</p>
-        <button class="event-button" onclick="openPopup('learnMorePopup')">Learn More</button>
-        <button class="register-button" onclick="openPopup('registerPopup')"id="registerBtn">Register Here</button>
-        
-    </div>
-</section>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="upcoming.html">
+                    <img src="logo.JPG" alt="Hikemandu Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#kathmandu-hikes">Kathmandu Hikes</a></li>
+                    <li><a href="index.html#destinations">Popular Treks</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <button class="book-btn">Book a Trek</button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-<!-- Learn More Popup -->
-<div id="learnMorePopup" class="popup">
-    <div class="popup-content learn-more-bg">
-        <span class="close" onclick="closePopup('learnMorePopup')">&times;</span>
-        <h2 style="color: blue; font-family: 'Times New Roman', Times, serif;">Event Details</h2>
-        <p style="color: wheat; font-size: 1.1rem; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Get ready for the most thrilling event of the year! We're hosting a special Hike with lots of exciting activities like hiking, group adventures.</p>
-        <h3 style=" color: green; font-size: 1.3rem; font-family: 'Times New Roman', Times, serif;"><strong>Hike Info</strong></h3>
-<ul style="color: black; font-size: 1.07rem;">
-        <li><strong>Route:</strong> Sanga - Aashapuri - Doleshwor - Suryabinayak</li>
-         <li><strong>Distance:</strong> 11-13km</li>
-        <li><strong>Date:</strong> 15 Chaitra 2081</li>
-        <li><strong>Duration:</strong> 5-6 hours (Approx)</li>
-        <li><strong>Difficulty:</strong> Easy-Moderate</li>
-        <li><strong>Altitude:</strong> 1300m-2000m (From sea Level)</li>
-        <li><strong>Places of Attraction:</strong> Sanga Jhulunge Bridge, KharkaBari, Bukacho Gadhi, Suryabinayak Forest </li>
-        <li><strong>Meeting Time:</strong> 9:00 AM (We hope everyone will be on time, we won't wait if you are late)</li>
-        <li><strong>Meeting Location: </strong><a href= "https://www.google.com/maps/search/?api=1&query=Kailashnath+Mahadev+Statue,+Suryabinayak-9+Saga,+Bhaktapur" target="blank" >
-         Mahadev Statue, Suryabinayak-9 Sanga, Bhaktapur</a></li>
-        <li><strong>Transportation:</strong> Public Bus (Up to Sanga)</li>
-        <li><strong>Weather:</strong> Sunny with a chance of rain</li>
-        <li><strong>Cost:</strong> NPR 200-500 per person</li>
-        <li><strong>Organizer:</strong>
-        <a href="gallery.html" target="_blank" style="color: rgb(130, 6, 246);"> Hikemandu</a></li>
-        <li><strong>Contact:</strong> 9813092717</li>
-         </ul>
-
-         <h3 style="color: green; font-size: 1.3rem; font-family: 'Times New Roman', Times, serif;"><strong>Hiking Essentials</strong></h3>
-<ul style="color: black; font-size: 1.07rem;">
-    <li><strong>Clothing:</strong> Simple & Comfortable clothing is essential to adapt to changing weather conditions.</li>
-    <li><strong>Footwear:</strong> Light, Comfortable, and Waterproof Trekking Shoes/Boots. (Choose footwear with good ankle support and traction for varied terrain)</li>
-    <li><strong>Water:</strong> Carry plenty of water for the duration of Hike. (Minimum 2 Litres)</li>
-    <li><strong>Food:</strong> Homemade Foods (Chocolates/Juice/Fruits/Dry fruits/ Dehydrated meals). Please avoid bringing junk food, carbonated drinks, and alcohol.</li>
-    <li><strong>Fitness:</strong> Ensure you are in good physical condition and a Positive Attitude before embarking on a hike.</li>
-    <li><strong>Accessories:</strong> Cap/Hat, Sunglass, Gloves,Raincoat/Umbrella, Medicine (For Emergency), trekking pole(optional)</li>
-</ul>
-<p style="color: wheat; font-style: italic; font-size: 1.1rem;"><strong>Note:</strong> "Tell someone your plans" – let someone know where you are going and when you expect to be back.</p>
-    </div>
-</div>
-
-<!-- Register Popup -->
-<div id="registerPopup" class="popup">
-    <div class="popup-content register-bg">
-        <span class="close" onclick="closePopup('registerPopup')">&times;</span>
-        <h2>Register Now</h2>
-        <p>Secure your spot by registering today! Fill out the form and be part of this amazing adventure.</p>
+    <main>
+        <section id="event" class="upcoming-event-section">
+            <div class="event-content">
+                <p class="fun">"Step into nature's embrace with Hikemandu"</p><br>
+                <p class="event-description">Join us for an unforgettable adventure! Our next event is filled with exciting activities, great company, and stunning views. Don't miss out!</p>
+                <p class="fun">Limited People, Unlimited Fun</p>
+                <h2 class="event-title">Upcoming Event</h2>
+                
+                <p id="countdown" class="countdown-text"></p>
+                <p class="event-info"> *Banepa - Chandeshwori Temple- Nange Dadha- Sanga/Nala Hike*</p>
+               <div class="new-year-banner">
+                    <h1>Let's Explore 2082 With Hikemandu😊</h1>
+                  </div>
+                <button class="event-button" onclick="openPopup('learnMorePopup')">Learn More</button>
+                <button class="register-button" onclick="openPopup('registerPopup')"id="registerBtn">Register Here</button>
+            </div>
+        </section>
         
-        <form id="registerForm" onsubmit="handleFormSubmit(event)">
-            <label>Required fields are marked with *</label>
-            
-            <input type="text" id="name" placeholder="* Enter your Full Name" required>
-            <input type="number" id="age" placeholder="* Enter your Age" required min="10" max="100">
-            <select id="gender" required>
-                <option value="" disabled selected>* Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-            <input type="text" id="address" placeholder="* Enter your Current Address" required>
-            <input type="tel" id="phoneNo" placeholder="* Enter your Phone Number (10 digits)" pattern="[0-9]{10}" maxlength="10" required>
-            <input type="email" id="email" placeholder="Enter your Email Address" required>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <script>
+            let confettiInterval = null;
         
-            <h3>Medical Information</h3>
-            <textarea id="medicalInfo" placeholder="List out any medical conditions or allergies (if any)"></textarea>
-            
+            const defaults = {
+                origin: { y: 0 },
+                angle: 100,
+                spread: 360,
+                startVelocity: 20,
+                gravity: 0.6,
+                ticks: 200,
+                zIndex: 999,
+            };
+        
+            function launchConfetti() {
+                confetti({
+                    ...defaults,
+                    particleCount: 5 + Math.floor(Math.random() * 10),
+                    origin: {
+                        x: Math.random(),
+                        y: Math.random() * 0.2,
+                    },
+                    colors: ['#bb0000', '#ffffff', '#00bb00', '#0000bb', '#ffbb00']
+                });
+            }
+        
+            function startInfiniteConfetti() {
+                if (!confettiInterval) {
+                    confettiInterval = setInterval(() => {
+                        const feedback = document.getElementById("feedback-section");
+                        if (!feedback) return;
+        
+                        const feedbackTop = feedback.getBoundingClientRect().top;
+                        const windowHeight = window.innerHeight;
+        
+                        // Stop confetti only when feedback section is in view
+                        if (feedbackTop > windowHeight) {
+                            launchConfetti();
+                        }
+                    }, 200);
+                }
+            }
+        
+            window.addEventListener("load", () => {
+                startInfiniteConfetti();
+            });
+        </script>
+        
+        <!-- Learn More Popup -->
+        <div id="learnMorePopup" class="popup">
+            <div class="popup-content learn-more-bg">
+                <span class="close" onclick="closePopup('learnMorePopup')">&times;</span>
+                <h2 style="color: blue; font-family: 'Times New Roman', Times, serif;">Event Details</h2>
+                <p style="color: wheat; font-size: 1.1rem; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    Get ready for the most thrilling event of the year! We're hosting a special Hike with lots of exciting activities like hiking, group adventures.</p>
+                <h3 style=" color: green; font-size: 1.3rem; font-family: 'Times New Roman', Times, serif;"><strong>Hike Info</strong></h3>
+        <ul style="color: black; font-size: 1.07rem;">
+                <li><strong>Route:</strong> Banepa - Chandeshwori temple - Raut Gaun - Nange dada - Sanga/Nala Hike</li>
+                 <li><strong>Distance:</strong> 12-14 km (Refrence: Google Maps)</li>
+                <li><strong>Date:</strong> 5 Baishak, 2082</li>
+                <li><strong>Duration:</strong> 5-6 hours (Approx)</li>
+                <li><strong>Difficulty:</strong> Easy-Moderate (Best for Beginners)</li>
+                <li><strong>Altitude:</strong> 1400m-1900m (From sea Level)</li>
+                <li><strong>Places of Attraction:</strong> Falcha, Chandeshwori thuosand steps, Gorakkali Mandir and more.</li>
+                <li><strong>Meeting Time:</strong> 10:00 AM (We hope everyone will be on time, we won't wait if you are late)</li>
+                 
+               <!-- Meeting Location with Toggle Button -->
+               <li><div class="map-toggle-container">
+                  <p><strong>Meeting Location:</strong><a href="https://g.co/kgs/JqwBPAa" target="_blank">KU Bus Stop, Dhulikhel</a></p>
+                  <button onclick="toggleMap()" class="toggle-map-btn">Show/Hide Map</button>
+                </div></li>
+            <!-- Embedded Google Map Preview -->
+            <div id="mapSection" style="display: none; margin-top: 10px;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.9829413004672!2d85.53837787529766!3d27.6250449762298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb08e7537f7627%3A0x903ef6c4424afed8!2sKU%20Bus%20stand!5e0!3m2!1sen!2snp!4v1744385746899!5m2!1sen!2snp" 
+                width="100%" 
+                height="350" 
+                style="border:0; border-radius:10px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        
+                <li><strong>Transportation:</strong> Public Bus (Up to KU Bus Stop)</li>
+                <li><strong>Weather:</strong> Sunny with a chance of rain</li>
+                <li><strong>Cost:</strong> NPR 200-500 per person</li>
+                <li><strong>Organizer:</strong>
+                <a href="gallery.html" target="_blank" style="color: rgb(130, 6, 246);"> Hikemandu</a></li>
+                <li><strong>Contact:</strong> 9813092717</li>
+                 </ul>
+        
+                 <h3 style="color: green; font-size: 1.3rem; font-family: 'Times New Roman', Times, serif;"><strong>Hiking Essentials</strong></h3>
+        <ul style="color: black; font-size: 1.07rem;">
+            <li><strong>Clothing:</strong> Simple & Comfortable clothing is essential to adapt to changing weather conditions.</li>
+            <li><strong>Footwear:</strong> Light, Comfortable, and Waterproof Trekking Shoes/Boots. (Choose footwear with good ankle support and traction for varied terrain)</li>
+            <li><strong>Water:</strong> Carry plenty of water for the duration of Hike. (Minimum 2 Litres)</li>
+            <li><strong>Food:</strong> Homemade Foods (Chocolates/Juice/Fruits/Dry fruits/ Dehydrated meals). Please avoid bringing junk food, carbonated drinks, and alcohol.</li>
+            <li><strong>Fitness:</strong> Ensure you are in good physical condition and a Positive Attitude before embarking on a hike.</li>
+            <li><strong>Accessories:</strong> Cap/Hat, Sunglass, Gloves,Raincoat/Umbrella, Medicine (For Emergency), trekking pole(optional)</li>
+        </ul>
+        <p style="color: wheat; font-style: italic; font-size: 1.1rem;"><strong>Note:</strong> "Tell someone your plans" – let someone know where you are going and when you expect to be back.</p>
+            </div>
+        </div>
+         
+        <!-- Register Popup -->
+        <div id="registerPopup" class="popup">
+            <div class="popup-content register-bg">
+                <span class="close" onclick="closePopup('registerPopup')">&times;</span>
+                <h2>Register Now</h2>
+                <p style="color: #ccff00;">Secure your spot by registering today! Fill out the form and be part of this amazing adventure.</p>
+                
+        <form id="registrationForm">
+            <div id="registerForm">
+              <label style="font-size: 1rem;">Required fields are marked with *</label>
+        
+              <div class="input-container">
+                <input type="text" id="name" placeholder=" " required>
+                <label for="name">* Enter your Full Name</label>
+              </div>
+        
+              <div class="input-container">
+                <input type="number" id="age" placeholder=" " required min="10" max="60">
+                <label for="age">* Enter your Age</label>
+              </div>
+        
+              <div class="input-container">
+                <select id="gender" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+                <label for="gender">* Select Gender</label>
+              </div>
+        
+              <div class="input-container">
+                <input type="text" id="address" placeholder=" " required>
+                <label for="address">* Enter your Current Address</label>
+              </div>
+        
+              <div class="input-container">
+                <input type="tel" id="phoneNo" pattern="[0-9]{10}" maxlength="10" placeholder=" " required>
+                <label for="phoneNo">* Enter your Phone Number</label>
+              </div>
+        
+              <div class="input-container">
+                <input type="email" id="email" placeholder=" " required>
+                <label for="email">* Enter your Email Address</label>
+              </div>
+        
+              <h3>Medical Information⚕️</h3>
+              <input type="text" id="medicalInfo" placeholder="Medical conditions or Allergies (if any)" maxlength="100">
+              <button type="button" class="clear-button" onclick="clearForm()">Clear All</button>
+            </div>
+        
+            <!-- Step 1: Checkbox to verify "I'm not a robot" -->
+        <div id="robot-container">
+            <label class="robot-check">
+            <input type="checkbox" id="robot-check" required> I’m not a robot🤖
+            </label>
+          <!-- Step 2: Once checked, show the "Catch the Putali" game -->
+          <p id="chapeta-instruction" class="chapeta-instruction" style="display: none;">
+            Catch the "Putali🦋" to prove you're not Robot.</p>
+          </div>
+          <div id="chapeta-container" class="chapeta-container" style="display: none;">
+            <button id="chapeta-btn"title="Catch the Putali">Putali🦋</button>
+          </div>
+               
+              
+            <!-- Terms and Conditions -->
+            <h3 style="color: #ccff00;">Terms and Conditions</h3>
             <div class="terms">
                 <input type="checkbox" id="terms" required>
-                <label for="terms" style="display: inline-block; margin-left: 5px;">I agree to the <a href="termsandconditions.html" target="_blank">Terms and Conditions</a></label>
+                <label for="terms">I agree to the <a href="termsandconditions.html" target="_blank" style="color:#ff4d00;">Terms and Conditions</a></label>
             </div>
-            
+            <!-- Contact Information -->
+            <p>*Kindly Contact us if you are joining our Adventure<br>Contact Number: 9813092717</p>
+            <!-- Button Group -->
             <div class="button-group">
-                <button type="button" class="clear-button" onclick="clearForm()">Clear All</button>
+                
+                <button type="button" class="draft-button" onclick="saveDraft()">Save as Draft</button>
                 <button type="submit" class="submit-button">Submit</button>
             </div>
         </form>
+        </div>
+        </div>
+        
+
+        <section class="events-list">
+            <div class="container">
+                <h2 class="section-title">More Upcoming Events</h2>
+                
+                <div class="events-grid">
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="https://source.unsplash.com/random/600x400/?hiking,nagarkot" alt="Nagarkot Sunrise Trek">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">May</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Nagarkot Sunrise Trek</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-calendar"></i> May 15, 2025</span>
+                                <span><i class="fas fa-clock"></i> 4:00 AM - 10:00 AM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Nagarkot</span>
+                            </div>
+                            <p>Experience the breathtaking sunrise over the Himalayas from Nagarkot viewpoint. This early morning trek offers stunning panoramic views of the mountain range including Mount Everest on clear days.</p>
+                            <div class="event-footer">
+                                <span class="event-price">NPR 1,200</span>
+                                <a href="#" class="btn primary-btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="https://source.unsplash.com/random/600x400/?hiking,chandragiri" alt="Chandragiri Hills Hike">
+                            <div class="event-date">
+                                <span class="day">22</span>
+                                <span class="month">May</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Chandragiri Hills Hike</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-calendar"></i> May 22, 2025</span>
+                                <span><i class="fas fa-clock"></i> 7:00 AM - 4:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Chandragiri</span>
+                            </div>
+                            <p>Hike to the summit of Chandragiri Hills for panoramic views of Kathmandu Valley and the Himalayan range. Explore the temple at the top and enjoy the cable car ride back down.</p>
+                            <div class="event-footer">
+                                <span class="event-price">NPR 1,500</span>
+                                <a href="#" class="btn primary-btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="https://source.unsplash.com/random/600x400/?hiking,phulchowki" alt="Phulchowki Day Hike">
+                            <div class="event-date">
+                                <span class="day">29</span>
+                                <span class="month">May</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Phulchowki Day Hike</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-calendar"></i> May 29, 2025</span>
+                                <span><i class="fas fa-clock"></i> 6:30 AM - 5:00 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Godavari</span>
+                            </div>
+                            <p>Explore the highest hill around Kathmandu Valley. Phulchowki offers rich biodiversity, beautiful flora, and stunning views of the surrounding mountains and valleys.</p>
+                            <div class="event-footer">
+                                <span class="event-price">NPR 1,800</span>
+                                <a href="#" class="btn primary-btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="past-events">
+            <div class="container">
+                <h2 class="section-title">Past Events</h2>
+                
+                <div class="past-events-slider">
+                    <div class="past-event">
+                        <img src="https://source.unsplash.com/random/400x300/?hiking,nepal,1" alt="Shivapuri National Park Trek">
+                        <div class="past-event-overlay">
+                            <h3>Shivapuri National Park Trek</h3>
+                            <p>April 2, 2025</p>
+                            <a href="#" class="btn outline-btn">View Photos</a>
+                        </div>
+                    </div>
+                    
+                    <div class="past-event">
+                        <img src="https://source.unsplash.com/random/400x300/?hiking,nepal,2" alt="Jamacho Gumba Hike">
+                        <div class="past-event-overlay">
+                            <h3>Jamacho Gumba Hike</h3>
+                            <p>March 15, 2025</p>
+                            <a href="#" class="btn outline-btn">View Photos</a>
+                        </div>
+                    </div>
+                    
+                    <div class="past-event">
+                        <img src="https://source.unsplash.com/random/400x300/?hiking,nepal,3" alt="Champadevi Day Hike">
+                        <div class="past-event-overlay">
+                            <h3>Champadevi Day Hike</h3>
+                            <p>February 28, 2025</p>
+                            <a href="#" class="btn outline-btn">View Photos</a>
+                        </div>
+                    </div>
+                    
+                    <div class="past-event">
+                        <img src="https://source.unsplash.com/random/400x300/?hiking,nepal,4" alt="Sundarijal to Chisapani Trek">
+                        <div class="past-event-overlay">
+                            <h3>Sundarijal to Chisapani Trek</h3>
+                            <p>February 10, 2025</p>
+                            <a href="#" class="btn outline-btn">View Photos</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Learn More Popup -->
+    <div id="learnMorePopup" class="popup">
+        <div class="popup-content learn-more-bg">
+            <span class="close" onclick="closePopup('learnMorePopup')">&times;</span>
+            <h2>Event Details</h2>
+            <p>Get ready for the most thrilling event of the year! We're hosting a special Hike with lots of exciting activities.</p>
+            
+            <h3>Hike Info</h3>
+            <ul>
+                <li><strong>Route:</strong> Banepa - Chandeshwori temple - Raut Gaun - Nange dada - Sanga/Nala Hike</li>
+                <li><strong>Distance:</strong> 12-14 km (Reference: Google Maps)</li>
+                <li><strong>Date:</strong> April 19, 2025</li>
+                <li><strong>Duration:</strong> 5-6 hours (Approx)</li>
+                <li><strong>Difficulty:</strong> Easy-Moderate (Best for Beginners)</li>
+                <li><strong>Altitude:</strong> 1400m-1900m (From sea Level)</li>
+                <li><strong>Places of Attraction:</strong> Falcha, Chandeshwori thousand steps, Gorakkali Mandir and more.</li>
+                <li><strong>Meeting Time:</strong> 10:00 AM (We hope everyone will be on time, we won't wait if you are late)</li>
+                <li>
+                    <div class="map-toggle-container">
+                        <p><strong>Meeting Location:</strong> KU Bus Stop, Dhulikhel</p>
+                        <button onclick="toggleMap()" class="toggle-map-btn">Show/Hide Map</button>
+                    </div>
+                </li>
+                <div id="mapSection" style="display: none; margin-top: 10px;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.9829413004672!2d85.53837787529766!3d27.6250449762298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb08e7537f7627%3A0x903ef6c4424afed8!2sKU%20Bus%20stand!5e0!3m2!1sen!2snp!4v1744385746899!5m2!1sen!2snp" 
+                        width="100%" 
+                        height="350" 
+                        style="border:0; border-radius:10px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <li><strong>Transportation:</strong> Public Bus (Up to KU Bus Stop)</li>
+                <li><strong>Weather:</strong> Sunny with a chance of rain</li>
+                <li><strong>Cost:</strong> NPR 200-500 per person</li>
+                <li><strong>Organizer:</strong> Hikemandu</li>
+                <li><strong>Contact:</strong> 9813092717</li>
+            </ul>
+
+            <h3>Hiking Essentials</h3>
+            <ul>
+                <li><strong>Clothing:</strong> Simple & Comfortable clothing is essential to adapt to changing weather conditions.</li>
+                <li><strong>Footwear:</strong> Light, Comfortable, and Waterproof Trekking Shoes/Boots. (Choose footwear with good ankle support and traction for varied terrain)</li>
+                <li><strong>Water:</strong> Carry plenty of water for the duration of Hike. (Minimum 2 Litres)</li>
+                <li><strong>Food:</strong> Homemade Foods (Chocolates/Juice/Fruits/Dry fruits/ Dehydrated meals). Please avoid bringing junk food, carbonated drinks, and alcohol.</li>
+                <li><strong>Fitness:</strong> Ensure you are in good physical condition and a Positive Attitude before embarking on a hike.</li>
+                <li><strong>Accessories:</strong> Cap/Hat, Sunglass, Gloves, Raincoat/Umbrella, Medicine (For Emergency), trekking pole(optional)</li>
+            </ul>
+            <p><strong>Note:</strong> "Tell someone your plans" – let someone know where you are going and when you expect to be back.</p>
+        </div>
     </div>
-</div>
 
-<script src="event.js"></script> <!-- Link to external JS -->
+    <!-- Register Popup -->
+    <div id="registerPopup" class="popup">
+        <div class="popup-content register-bg">
+            <span class="close" onclick="closePopup('registerPopup')">&times;</span>
+            <h2>Register Now</h2>
+            <p>Secure your spot by registering today! Fill out the form and be part of this amazing adventure.</p>
+            
+            <form id="registrationForm">
+                <div id="registerForm">
+                    <label>Required fields are marked with *</label>
 
-<div id="feedback-section">
-    <h2>We value your feedback!</h2>
-    <form id="feedback-form">
-        <label for="feedback">Please provide your feedback about this Website:</label>
-        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..." required></textarea><br><br>
-        <button type="submit" class="feedback-submit-button">Submit Feedback</button>
-    </form>
-    <div id="feedback-response" style="display: none; margin-top: 10px; color: green;"></div>
-</div>
+                    <div class="input-container">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">* Enter your Full Name</label>
+                    </div>
 
+                    <div class="input-container">
+                        <input type="number" id="age" placeholder=" " required min="10" max="60">
+                        <label for="age">* Enter your Age</label>
+                    </div>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2025 Hikemandu. All rights reserved.</p>
-    <p>Follow us on:</p>
-    <div class="social-icons">
-        <a href="https://facebook.com/Pratik.Shiwakoti.10" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://instagram.com/parr_tik" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com/Pratik_Cwakoti" target="_blank">
-            <i class="fab fa-twitter"></i>
-        </a>
+                    <div class="input-container">
+                        <select id="gender" required>
+                            <option value="" disabled selected hidden></option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="gender">* Select Gender</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="text" id="address" placeholder=" " required>
+                        <label for="address">* Enter your Current Address</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="tel" id="phoneNo" pattern="[0-9]{10}" maxlength="10" placeholder=" " required>
+                        <label for="phoneNo">* Enter your Phone Number</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">* Enter your Email Address</label>
+                    </div>
+
+                    <h3>Medical Information ⚕️</h3>
+                    <input type="text" id="medicalInfo" placeholder="Medical conditions or Allergies (if any)" maxlength="100">
+                    <button type="button" class="clear-button" onclick="clearForm()">Clear All</button>
+                </div>
+
+                <!-- Robot verification -->
+                <div id="robot-container">
+                    <label class="robot-check">
+                        <input type="checkbox" id="robot-check" required> I'm not a robot 🤖
+                    </label>
+                    <p id="chapeta-instruction" class="chapeta-instruction" style="display: none;">
+                        Catch the "Putali🦋" to prove you're not Robot.
+                    </p>
+                </div>
+                <div id="chapeta-container" class="chapeta-container" style="display: none;">
+                    <button id="chapeta-btn" title="Catch the Putali">Putali🦋</button>
+                </div>
+                
+                <!-- Terms and Conditions -->
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions</label>
+                </div>
+                
+                <!-- Button Group -->
+                <div class="button-group">
+                    <button type="button" class="draft-button" onclick="saveDraft()">Save as Draft</button>
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
-    <p class="marquee">Designed By Pratik Shiwakoti</p>
-</footer>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="logo.JPG" alt="Hikemandu Logo"></div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#kathmandu-hikes">Kathmandu Hikes</a></li>
+                        <li><a href="index.html#destinations">Popular Treks</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Location: Uh Tehi Ho</p>
+                    <p><i class="fas fa-phone"></i> +977 9813092717</p>
+                    <p><i class="fas fa-envelope"></i> pratikshiwakoti105@gmail.com</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <p>Get updates on new treks and special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; <span id="year"></span> Hikemandu. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+            <div class="footer-credit">
+                <p>Designed By Pratik Shiwakoti</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="upcoming.js"></script>
 </body>
 </html>
