@@ -1,3 +1,9 @@
+window.addEventListener("load", function () {
+  if (/Mobi|Android/i.test(navigator.userAgent)) {
+      alert("Open in desktop for better experience");
+  }
+});
+
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
     if (window.scrollY > 100) {  // Trigger after scrolling 100px
